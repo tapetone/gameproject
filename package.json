@@ -1,0 +1,14 @@
+{
+  "name": "gameproject",
+  "version": "1.0.0",
+  "description": "this is a repo for my game project.",
+  "main": "gamestart.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Haunting of TP</title>
+    <!-- <style>
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+    </style> -->
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex font-serif h-full lg:h-screen place-items-center justify-center bg-[url('https://wordpress.bigissue.com/wp-content/uploads/2023/09/haunted-house-7508035_1920-1536x864.jpg')] bg-cover">
+    <div class="border-solid border-2 border-gray-800 flex flex-col lg:flex-row h-full lg:h-[700px] w-screen lg:w-[1000px] m-auto justify-center items-center bg-gray-100" id="introScreen">
+        <div class="flex h-full w-full lg:w-[300px]"><img class="object-cover lg:h-full w-full" src="https://drive.google.com/uc?id=1jdEPG9oVNQ0A_F6zkOU7YHY61fsXqqy9" alt="Haunted Safe"></div>
+        <div class="flex flex-col p-4 h-full m-1/2 w-full lg:w-[700px]">
+            <h1 class="mb-10 text-3xl font-extrabold md:text-3xl lg:text-3xl text-center">Haunted Hunt: Toilet Paper Trials</h1>
+            <h3 class="mb-4 text-center text-xl">Spectral Mansion, December 2023.<br><br>You are one part of a dynamic ghost-busting duo. While chasing down mischievous spirits, your partner, as usual, got stuck in the bathroom without toilet paper.<br><br>Now, in the Grand Hall, you spot the "Mystical Safe of Toilet Paper, Ancient Secrets, and Dangerous Spells.” Great!<br><br>Ok, not so great. It demands a <strong>six-digit code</strong> to reveal its treasures.<br><br>You must go on a quest through the mansion, collecting two digits of the code in each room by answering JavaScript questions posed by otherworldly beings.<br><br>Enter the correct code before you become a ghost yourself. You have three tries. <br><br>Happy hunting!</h3>
+            <input type="button" value="Start Game" class="mb-4 inline-flex justify-start mx-auto px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onclick="startGame()"/>
+        </div>
+    </div>
+    <div class="border-solid border-2 border-gray-800 flex flex-col lg:flex-row h-full lg:h-[700px] w-screen lg:w-[1000px] m-auto justify-center items-center bg-gray-100 hidden" id="gameScreen">
+        <div class="flex h-full w-full lg:w-[300px]"><img id="roomImage" class="object-cover lg:h-full w-full" src="https://drive.google.com/uc?id=1v92IC6GYEP5KLr5DCSeRqwi9tLk5n6rB" alt="Haunted Safe"></div>
+        <div class="flex flex-col p-4 h-full m-1/2 w-full lg:w-[700px]">
+            <div class="flex flex-col p-4 h-full m-1/2 w-full">
+                <p id="textarea" class="flex flex-col h-full justify-center text-center text-xl"></p>
+                <p id="usertext" class="flex justify-center my-4">
+                    <input class="border-black-800 ring-1 ring-gray-300 rounded p-4 text-sm font-bold" type="text" id="userInput" placeholder="Enter your command...">
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="border-solid border-2 border-gray-800 flex flex-col lg:flex-row h-full lg:h-[700px] w-screen lg:w-[1000px] m-auto justify-center items-center bg-gray-100 hidden" id="finalScreen">
+        <div class="flex h-full w-full lg:w-[300px]"><img class="object-cover lg:h-full w-full" src="https://drive.google.com/uc?id=1v92IC6GYEP5KLr5DCSeRqwi9tLk5n6rB" alt="Haunted Safe"></div>
+        <div class="flex flex-col p-4 h-full m-1/2 w-full lg:w-[700px]">
+            <h1 id="finalTitle" class="my-10 text-3xl font-extrabold md:text-3xl lg:text-3xl text-center"></h1>
+            <h3 id="finalText" class="mb-4 text-center text-xl"></h3>
+            <input type="button" value="Play Again" class="mb-4 inline-flex justify-start mx-auto px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onclick="location.reload()"/>
+        </div>
+    </div>
+    <script src="gamestart.js"></script>
+</body>
+</html> 
