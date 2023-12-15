@@ -175,7 +175,7 @@ Library.linkRoom("north", Hall);
 
 //add characters
 const Safe = new Character("Safe");
-Safe.conversation = "";
+Safe.conversation = "Six-digit code required.";
 Safe.description = "This is a safe that requires a six-digit code.<br/><br/><p id='codetext' class='flex justify-center my-4'><input class='flex border-black-800 ring-1 ring-gray-300 rounded p-2 text-sm font-bold text-center' type='text' id='codeInput' placeholder='__ __ __ __ __ __'></p>";
 
 const Ghost = new Character("Lady Eleanor's Ghost");
